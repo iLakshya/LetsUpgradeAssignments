@@ -1,4 +1,4 @@
-# Basics of *args and **kwargs work
+# Basics of *args and **kwargs.
 # Sum of integers using *args
 def my_sum(*args):
     result = 0
