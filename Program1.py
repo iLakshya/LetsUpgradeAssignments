@@ -1,4 +1,4 @@
-# Print all the prime numbes between 1 to 200
+# Print all the prime numbes between 1 to 200.
 lower = 1
 upper = 200
 print('Prime numbers between',lower,'and',upper,'are:')
