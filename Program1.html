@@ -1,205 +1,205 @@
 <!DOCTYPE html>
 <html lang = "en">
-<head>
-    <meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <title>Quiz Game</title>
-    <link rel = "stylesheet" href = "Program1.css">
-    <link href = "https://fonts.googleapis.com/css?family=Montserrat" rel = "stylesheet">
-	<link href = "https://fonts.googleapis.com/css?family=Lato" rel = "stylesheet">
-</head>
-<body>
-    <div class = "topNav">
-        <div class = "logoNText">
-            <a href = "index.html">
-                <div class = "logoText">
-                    <h3>Q + ME</h3>
-                </div>
-            </a>
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Quiz Game</title>
+        <link rel = "stylesheet" href = "Program1.css">
+        <link href = "https://fonts.googleapis.com/css?family=Montserrat" rel = "stylesheet">
+    	<link href = "https://fonts.googleapis.com/css?family=Lato" rel = "stylesheet">
+    </head>
+    <body>
+        <div class = "topNav">
+            <div class = "logoNText">
+                <a href = "index.html">
+                    <div class = "logoText">
+                        <h3>Q + ME</h3>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href = "index.html">
+                    <h3>HOME</h3>
+                </a>
+                <a href = "index.html">
+                    <h3>TAKE A QUIZ</h3>
+                </a>
+            </div>
         </div>
+        <div class = "titlebar">
+            <div class = "titleText">
+                <ul><h2>WHAT CITY DO YOU BELONG IN?</h2></ul>
+                <ul><p>Take the quiz below!!!</p></ul>
+            </div>
+        </div>
+        <form>
+            <div class = "grid">
+                <div class = "questionBanner">
+                    <h3>PICK A SHOE STYLE!</h3>
+                </div>
+                <div class = "sectionWrapper">
+                    <div class = "sections">
+                        <input type = "radio" name = "shoes" value = "boots" id = "boots" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "boots">
+                            <img src = "https://images.unsplash.com/photo-1494955464529-790512c65305?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2a58b00dc3c3889ce91b3345c19169ea&auto=format&fit=crop&w=2702&q=80" alt = "boots">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "shoes" value = "brinkenstock" id = "brinkenstock" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "brinkenstock">
+                            <img src = "https://images.unsplash.com/photo-1535052204718-55672fc78096?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2b39509dbd0ae18687228faf068fb9aa&auto=format&fit=crop&w=3289&q=80" alt = "brinkenstock">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "shoes" value = "converse" id = "converse" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "converse">
+                            <img src = "https://images.unsplash.com/photo-1527128296579-fce16948f060?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8dd8b8138546d464ffab93a9f4ee7ca1&auto=format&fit=crop&w=2700&q=80" alt = "converse">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "shoes" value = "sneakers" id = "sneakers" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "sneakers">
+                            <img src = "https://images.unsplash.com/photo-1511360154485-8bac04fbdf25?ixlib=rb-0.3.5&s=340eded45476d6c270079878cc687f8b&auto=format&fit=crop&w=2700&q=80" alt = "sneakers">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class = "grid">
+                <div class = "questionBanner">
+                    <h3>PICK A LANDSCAPE!</h3>
+                </div>
+                <div class = "sectionWrapper">
+                    <div class = "sections">
+                        <input type = "radio" name = "landscape" value = "cityscape" id = "cityscape" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "cityscape">
+                            <img src = "https://images.unsplash.com/photo-1503642551022-c011aafb3c88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e402f612efd271ac52647651246a2cd9&auto=format&fit=crop&w=800&q=60" alt = "cityscape">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "landscape" value = "mountain" id = "mountain" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "mountain">
+                            <img src = "https://images.unsplash.com/photo-1501791330673-603715379ded?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3a52bc4e101f33cbf1fd42e9c1604e02&auto=format&fit=crop&w=2700&q=80" alt = "mountain">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "landscape" value = "beach" id = "beach" class = "inuput-hidden" onchange = "getAnswers()"/>
+                        <label for = "beach">
+                            <img src = "https://images.unsplash.com/photo-1525968635328-37e2ce22d2d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3dc43c71302c88d8939a94b6e15c687&auto=format&fit=crop&w=800&q=60" alt = "beach">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "landscape" value = "desert" id = "desert" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "desert">
+                            <img src = "https://images.unsplash.com/photo-1464553186862-680edae5b2bc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=731b36d23aa027cf5b8c8a333e99dc95&auto=format&fit=crop&w=2555&q=80" alt = "desert">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class = "grid">
+                <div class = "questionBanner">
+                    <h3>WHAT WOULD YOU LIKE TO HAVE FOR BREAKFAST?</h3>
+                </div>
+                <div class = "sectionWrapper">
+                    <div class = "sections">
+                        <input type = "radio" name = "breakfast" value = "coffee" id = "coffee" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "coffee">
+                            <img src = "https://images.unsplash.com/photo-1445077100181-a33e9ac94db0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb3d98f7a250f342071a89097e8e59d1&auto=format&fit=crop&w=2167&q=80" alt = "coffee">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "breakfast" value = "vegan" id = "vegan" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "vegan">
+                            <img src = "https://images.unsplash.com/photo-1494390248081-4e521a5940db?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73a27b0f1231b46fad892c62f220b9d8&auto=format&fit=crop&w=2495&q=80" alt = "vegan">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "breakfast" value = "healthy" id = "healthy" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "healthy">
+                            <img src = "https://images.unsplash.com/photo-1531234799389-dcb7651eb0a2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9b7241fbbe99b4ec1d78702da958eeb3&auto=format&fit=crop&w=800&q=60" alt = "healthy">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "breakfast" value = "classic" id = "classic" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "classic">
+                            <img src = "https://images.unsplash.com/photo-1529411081224-84ac0d0bf6ab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a9c0dbdc15011e63557b6fa3ed2906ea&auto=format&fit=crop&w=800&q=60" alt = "classic">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class = "grid">
+                <div class = "questionBanner">
+                    <h3>PICK THE TASTIEST LOOKING PIZZA!</h3>
+                </div>
+                <div class = "sectionWrapper">
+                    <div class = "sections">
+                        <input type = "radio" name = "pizza" value = "cheese" id = "chesse" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "cheese">
+                            <img src = "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=efe01df2ebde79714be88d560479c9c7&auto=format&fit=crop&w=800&q=60" alt = "cheese">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "pizza" value = "veganPizza" id = "veganPizza" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "veganPizza">
+                            <img src = "https://images.unsplash.com/photo-1490717064594-3bd2c4081693?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3926737d957c60a36be4b4645301ec6f&auto=format&fit=crop&w=800&q=60" alt = "veganPizza">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "pizza" value = "supreme" id = "supreme" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "supreme">
+                            <img src = "https://images.unsplash.com/photo-1511516412963-801b050c92aa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f23e22ac67f9dd47c1471491abfdda84&auto=format&fit=crop&w=800&q=60" alt = "supreme">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "pizza" value = "olives" id = "olives" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "olives">
+                            <img src = "https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1f409ef1ee50c261019e377ca254867a&auto=format&fit=crop&w=800&q=60" alt = "olives">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class = "gird">
+                <div class = "questionBanner">
+                    <h3>WHAT ACTIVITY DO YOU LIKE THE MOST?</h3>
+                </div>
+                <div class = "sectionWrapper">
+                    <div class = "sections">
+                        <input type = "radio" name = "activity" value = "yoga" id = "yoga" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "yoga">
+                            <img src = "https://images.unsplash.com/photo-1527248033857-fc4134970661?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c2838af6efb57db3ffb61b1c9fd278e2&auto=format&fit=crop&w=800&q=60" alt = "yoga">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "activity" value = "biking" id = "biking" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "biking">
+                            <img src = "https://images.unsplash.com/photo-1520560447607-3769beb2ce5a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=020061c110fd8e184362ac7c4718e057&auto=format&fit=crop&w=800&q=60" alt = "biking">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "activity" value = "swimming" id = "swimming" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "swimming">
+                            <img src = "https://images.unsplash.com/photo-1521995897-1fbc7512c090?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=012c5aaca30c7dd049b27e9348f7f3f7&auto=format&fit=crop&w=800&q=60" alt = "swimming">
+                        </label>
+                    </div>
+                    <div class = "sections">
+                        <input type = "radio" name = "activity" value = "hiking" id = "hiking" class = "input-hidden" onchange = "getAnswers()"/>
+                        <label for = "hiking">
+                            <img src = "https://images.unsplash.com/photo-1485967249725-2d0b975fa8a2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4e0d1edffbad88072bb38ac3e67dbc24&auto=format&fit=crop&w=800&q=60" alt = "hiking">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
         <div>
-            <a href = "index.html">
-                <h3>HOME</h3>
-            </a>
-            <a href = "index.html">
-                <h3>TAKE A QUIZ</h3>
-            </a>
-        </div>
-    </div>
-    <div class = "titlebar">
-        <div class = "titleText">
-            <ul><h2>WHAT CITY DO YOU BELONG IN?</h2></ul>
-            <ul><p>Take the quiz below!!!</p></ul>
-        </div>
-    </div>
-    <form>
-        <div class = "grid">
             <div class = "questionBanner">
-                <h3>PICK A SHOE STYLE!</h3>
+                <h3 id = "resultHeader"></h3>
             </div>
-            <div class = "sectionWrapper">
-                <div class = "sections">
-                    <input type = "radio" name = "shoes" value = "boots" id = "boots" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "boots">
-                        <img src = "https://images.unsplash.com/photo-1494955464529-790512c65305?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2a58b00dc3c3889ce91b3345c19169ea&auto=format&fit=crop&w=2702&q=80" alt = "boots">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "shoes" value = "brinkenstock" id = "brinkenstock" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "brinkenstock">
-                        <img src = "https://images.unsplash.com/photo-1535052204718-55672fc78096?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2b39509dbd0ae18687228faf068fb9aa&auto=format&fit=crop&w=3289&q=80" alt = "brinkenstock">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "shoes" value = "converse" id = "converse" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "converse">
-                        <img src = "https://images.unsplash.com/photo-1527128296579-fce16948f060?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8dd8b8138546d464ffab93a9f4ee7ca1&auto=format&fit=crop&w=2700&q=80" alt = "converse">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "shoes" value = "sneakers" id = "sneakers" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "sneakers">
-                        <img src = "https://images.unsplash.com/photo-1511360154485-8bac04fbdf25?ixlib=rb-0.3.5&s=340eded45476d6c270079878cc687f8b&auto=format&fit=crop&w=2700&q=80" alt = "sneakers">
-                    </label>
+            <div class = "result">
+                <div class = "resultImgBlocK">
+                    <img src = "" id = "resultImg">
                 </div>
             </div>
         </div>
-        <div class = "grid">
-            <div class = "questionBanner">
-                <h3>PICK A LANDSCAPE!</h3>
-            </div>
-            <div class = "sectionWrapper">
-                <div class = "sections">
-                    <input type = "radio" name = "landscape" value = "cityscape" id = "cityscape" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "cityscape">
-                        <img src = "https://images.unsplash.com/photo-1503642551022-c011aafb3c88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e402f612efd271ac52647651246a2cd9&auto=format&fit=crop&w=800&q=60" alt = "cityscape">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "landscape" value = "mountain" id = "mountain" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "mountain">
-                        <img src = "https://images.unsplash.com/photo-1501791330673-603715379ded?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3a52bc4e101f33cbf1fd42e9c1604e02&auto=format&fit=crop&w=2700&q=80" alt = "mountain">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "landscape" value = "beach" id = "beach" class = "inuput-hidden" onchange = "getAnswers()"/>
-                    <label for = "beach">
-                        <img src = "https://images.unsplash.com/photo-1525968635328-37e2ce22d2d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3dc43c71302c88d8939a94b6e15c687&auto=format&fit=crop&w=800&q=60" alt = "beach">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "landscape" value = "desert" id = "desert" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "desert">
-                        <img src = "https://images.unsplash.com/photo-1464553186862-680edae5b2bc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=731b36d23aa027cf5b8c8a333e99dc95&auto=format&fit=crop&w=2555&q=80" alt = "desert">
-                    </label>
-                </div>
-            </div>
-        </div>
-        <div class = "grid">
-            <div class = "questionBanner">
-                <h3>WHAT WOULD YOU LIKE TO HAVE FOR BREAKFAST?</h3>
-            </div>
-            <div class = "sectionWrapper">
-                <div class = "sections">
-                    <input type = "radio" name = "breakfast" value = "coffee" id = "coffee" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "coffee">
-                        <img src = "https://images.unsplash.com/photo-1445077100181-a33e9ac94db0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb3d98f7a250f342071a89097e8e59d1&auto=format&fit=crop&w=2167&q=80" alt = "coffee">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "breakfast" value = "vegan" id = "vegan" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "vegan">
-                        <img src = "https://images.unsplash.com/photo-1494390248081-4e521a5940db?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73a27b0f1231b46fad892c62f220b9d8&auto=format&fit=crop&w=2495&q=80" alt = "vegan">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "breakfast" value = "healthy" id = "healthy" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "healthy">
-                        <img src = "https://images.unsplash.com/photo-1531234799389-dcb7651eb0a2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9b7241fbbe99b4ec1d78702da958eeb3&auto=format&fit=crop&w=800&q=60" alt = "healthy">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "breakfast" value = "classic" id = "classic" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "classic">
-                        <img src = "https://images.unsplash.com/photo-1529411081224-84ac0d0bf6ab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a9c0dbdc15011e63557b6fa3ed2906ea&auto=format&fit=crop&w=800&q=60" alt = "classic">
-                    </label>
-                </div>
-            </div>
-        </div>
-        <div class = "grid">
-            <div class = "questionBanner">
-                <h3>PICK THE TASTIEST LOOKING PIZZA!</h3>
-            </div>
-            <div class = "sectionWrapper">
-                <div class = "sections">
-                    <input type = "radio" name = "pizza" value = "cheese" id = "chesse" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "cheese">
-                        <img src = "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=efe01df2ebde79714be88d560479c9c7&auto=format&fit=crop&w=800&q=60" alt = "cheese">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "pizza" value = "veganPizza" id = "veganPizza" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "veganPizza">
-                        <img src = "https://images.unsplash.com/photo-1490717064594-3bd2c4081693?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3926737d957c60a36be4b4645301ec6f&auto=format&fit=crop&w=800&q=60" alt = "veganPizza">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "pizza" value = "supreme" id = "supreme" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "supreme">
-                        <img src = "https://images.unsplash.com/photo-1511516412963-801b050c92aa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f23e22ac67f9dd47c1471491abfdda84&auto=format&fit=crop&w=800&q=60" alt = "supreme">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "pizza" value = "olives" id = "olives" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "olives">
-                        <img src = "https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1f409ef1ee50c261019e377ca254867a&auto=format&fit=crop&w=800&q=60" alt = "olives">
-                    </label>
-                </div>
-            </div>
-        </div>
-        <div class = "gird">
-            <div class = "questionBanner">
-                <h3>WHAT ACTIVITY DO YOU LIKE THE MOST?</h3>
-            </div>
-            <div class = "sectionWrapper">
-                <div class = "sections">
-                    <input type = "radio" name = "activity" value = "yoga" id = "yoga" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "yoga">
-                        <img src = "https://images.unsplash.com/photo-1527248033857-fc4134970661?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c2838af6efb57db3ffb61b1c9fd278e2&auto=format&fit=crop&w=800&q=60" alt = "yoga">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "activity" value = "biking" id = "biking" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "biking">
-                        <img src = "https://images.unsplash.com/photo-1520560447607-3769beb2ce5a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=020061c110fd8e184362ac7c4718e057&auto=format&fit=crop&w=800&q=60" alt = "biking">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "activity" value = "swimming" id = "swimming" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "swimming">
-                        <img src = "https://images.unsplash.com/photo-1521995897-1fbc7512c090?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=012c5aaca30c7dd049b27e9348f7f3f7&auto=format&fit=crop&w=800&q=60" alt = "swimming">
-                    </label>
-                </div>
-                <div class = "sections">
-                    <input type = "radio" name = "activity" value = "hiking" id = "hiking" class = "input-hidden" onchange = "getAnswers()"/>
-                    <label for = "hiking">
-                        <img src = "https://images.unsplash.com/photo-1485967249725-2d0b975fa8a2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4e0d1edffbad88072bb38ac3e67dbc24&auto=format&fit=crop&w=800&q=60" alt = "hiking">
-                    </label>
-                </div>
-            </div>
-        </div>
-    </form>
-    <div>
-        <div class = "questionBanner">
-            <h3 id = "resultHeader"></h3>
-        </div>
-        <div class = "result">
-            <div class = "resultImgBlocK">
-                <img src = "" id = "resultImg">
-            </div>
-        </div>
-    </div>
-</body>
-<script src = "Program1.js"></script>
+    </body>
+    <script src = "Program1.js"></script>
 </html>
