@@ -14,10 +14,10 @@ mongoose.connect(
     {   useUnifiedTopology: true,
         useNewUrlParser: true,
         useCreateIndex: true})
-.then(()=>{
+.then(() => {
     app.listen(PORT, ()=> console.log("server is running"))
 })
-.catch(err=>{
+.catch(err => {
     console.log(err);
 })
 
@@ -96,14 +96,16 @@ const express = require('express');
 const router = express.Router();
 
 router.post('/register',
-  [ check('name').not().isEmpty(),
-    check('email').normalizeEmail().isEmail(),
-    check('password').isLength({ min: 6 })],
+    [   check('name').not().isEmpty(),
+        check('email').normalizeEmail().isEmail(),
+        check('password').isLength({ min: 6 })
+    ],
 usersController.register);
 
 router.post('/login',
-  [ check('email').normalizeEmail().isEmail(),
-    check('password').isLength({ min: 6 })],
+    [   check('email').normalizeEmail().isEmail(),
+        check('password').isLength({ min: 6 })
+    ],
 usersController.login);
 
 module.exports = router;
@@ -121,5 +123,5 @@ mongoose.connect(
     {   useUnifiedTopology: true,
         useNewUrlParser: true,
         useCreateIndex: true})
-.then(()=>
+.then(() =>
 app.listen(PORT, () =>console.log('server is running')));
