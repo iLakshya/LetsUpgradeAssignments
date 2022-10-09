@@ -7,6 +7,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<Song> songs = Song.songs;
     return Container(
       decoration: BoxDecoration(
         gradient: LinerGradient(
@@ -29,19 +30,27 @@ class HomeScreen extends StatelessWidget {
                 padding: const EdgeInserts.all(20.0),
                 child: Column(
                   childern: [
-                    Text(
-                      'Enjoy your favourite music',
-                      style: Theme.of(context)
-                          .textTheme
-                          .headline6!
-                          .copyWith(fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      'Enjoy your favourite music',
-                      style: Theme.of(context)
-                          .textTheme
-                          .headline6!
-                          .copyWith(fontWeight: FontWeight.bold),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      childern: [
+                        Text(
+                          'Trending Music'
+                          style: Theme.of(context).tectTheme.headline6!.copyWith(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          )
+                        ),
+                        Text(
+                          'View More',
+                          style: Theme.of(context)
+                              .textTheme
+                              .bodyLarge!
+                              .copyWith(color: Colors.white),
+                          ),
+                        ],
+                      ),
+                      const _DiscoverMusic(),
+                        ],
                     ),
                   ],
                 ),
@@ -49,8 +58,6 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
   }
 }
 

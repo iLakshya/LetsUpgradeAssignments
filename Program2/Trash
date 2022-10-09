@@ -1,0 +1,31 @@
+Text(
+                      'Welcome',
+                      style: Theme.of(context).textTheme.bodyLarge,
+                    ),
+                    const SizedBox(height: 5),
+                    Text(
+                      'Enjoy your favourite music',
+                      style: Theme.of(context)
+                          .textTheme
+                          .headline6!
+                          .copyWith(fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(height: 20),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        isDense: true,
+                        filled: true,
+                        filleColor: Colors.white,
+                        hintText: 'Search',
+                        hintStyle: Theme.of(context)
+                            .textTheme.
+                            .bodyMedium!
+                            .copyWith(color: Colors.greyshade400),
+                        prefixIcon: 
+                            Icon(Icons.searc, color: Colors.greyshade400),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+                    ),
